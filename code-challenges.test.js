@@ -183,12 +183,14 @@ Pseudocode: 1.) Create an function called noDups
 // const dataArray2 = ["string", "null", "Boolean", "string", "undefined"]
 // // Expected output: ["array", "object", "number", "string", "Boolean", "null", "undefined"]
 
+
 const noDups = (array1, array2) => {
   
   let combinedArray = [...array1, ...array2];
-  let  filteredArray = [...new Set(combinedArray)];
-  return filteredArray
+  return [...new Set(combinedArray)];
 }
+
+console.log(noDups(dataArray1, dataArray2))
 
 /*
 

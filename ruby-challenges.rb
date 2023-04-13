@@ -46,7 +46,7 @@ beatles_album3 = 'Abbey Road'
 # 5.) return the mutated string
 
 def de_voweler string
-    string.delete! "aeiouy"
+    string.downcase.delete! "aeiouy"
 end
 
 p de_voweler(beatles_album1)
